@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Maps Routes API 测试</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Google Maps Routes API 测试</h1>
+        <div class="input-section">
+            <div class="input-group">
+                <label for="origin">起点：</label>
+                <input type="text" id="origin" placeholder="输入起点地址" value="北京天安门">
+            </div>
+            <div class="input-group">
+                <label for="destination">终点：</label>
+                <input type="text" id="destination" placeholder="输入终点地址" value="北京港中旅维景国际大酒店">
+            </div>
+            <div class="input-group">
+                <label for="travelMode">出行方式：</label>
+                <select id="travelMode">
+                    <option value="DRIVE">驾车</option>
+                    <option value="BICYCLE">自行车</option>
+                    <option value="WALK">步行</option>
+                    <option value="TRANSIT">公共交通</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="routingPreference">路线偏好：</label>
+                <select id="routingPreference">
+                    <option value="TRAFFIC_AWARE">考虑路况</option>
+                    <option value="TRAFFIC_AWARE_OPTIMAL">最优路况</option>
+                    <option value="TRAFFIC_UNAWARE">不考虑路况</option>
+                </select>
+            </div>
+            <button id="calculateRoute">计算路线</button>
+        </div>
+        <div id="map"></div>
+        <div id="result" class="result-section">
+            <h2>路线详情</h2>
+            <div id="routeDetails"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
