@@ -28,6 +28,7 @@
 - HTML5
 - CSS3
 - JavaScript
+- Node.js
 - Google Maps Platform API
   - Maps JavaScript API
   - Routes API
@@ -66,13 +67,6 @@
    
    # Windows
    set GOOGLE_MAPS_API_KEY=你的API密钥
-   ```
-
-   方法二：在 HTML 中配置
-   ```html
-   <script>
-     window.GOOGLE_MAPS_API_KEY = '你的API密钥';
-   </script>
    ```
 
 ## 使用方法
@@ -153,6 +147,7 @@
 - `index.html`: 主页面结构
 - `styles.css`: 页面样式
 - `script.js`: 主要业务逻辑
+- `server.js`: Node.js 服务器，用于注入环境变量
 - `test-routes.js`: Routes API 测试脚本（配置了API 密钥限制后，该脚本应该**跑不通**）
 - `Dockerfile`: Cloud Run 部署配置
 

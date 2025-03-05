@@ -1,5 +1,5 @@
-// 从环境变量或配置文件获取 API 密钥
-const API_KEY = process.env.GOOGLE_MAPS_API_KEY || window.GOOGLE_MAPS_API_KEY;
+// 从全局变量获取 API 密钥
+const API_KEY = window.GOOGLE_MAPS_API_KEY;
 const BASE_URL = 'https://routes.googleapis.com/directions/v2:computeRoutes';
 
 // 初始化地图
